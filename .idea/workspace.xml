@@ -24,36 +24,29 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="163" column="59" selection-start-line="163" selection-start-column="59" selection-end-line="163" selection-end-column="59" />
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="168" column="59" selection-start-line="168" selection-start-column="59" selection-end-line="168" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="genres.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="genres.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genres.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1218638">
-              <caret line="205" column="107" selection-start-line="205" selection-start-column="107" selection-end-line="205" selection-end-column="107" />
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="222" column="75" selection-start-line="220" selection-start-column="68" selection-end-line="222" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="material.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/material.min.css">
+      <file leaf-file-name="track-detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/track-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
-              <folding>
-                <element signature="e#50401#52102#2" expanded="true" />
-                <element signature="e#52108#53809#2" expanded="true" />
-                <element signature="e#54010#54907#1" expanded="true" />
-                <element signature="e#55071#55968#1" expanded="true" />
-                <element signature="e#76651#77252#2" expanded="true" />
-                <element signature="e#77258#77859#2" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.4265233">
+              <caret line="198" column="157" selection-start-line="198" selection-start-column="157" selection-end-line="198" selection-end-column="157" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/css/app.v1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+              <caret line="246" column="21" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -89,8 +82,9 @@
         <option value="$PROJECT_DIR$/css/material.min.css" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/app.v1.css" />
         <option value="$PROJECT_DIR$/genres.html" />
+        <option value="$PROJECT_DIR$/css/app.v1.css" />
+        <option value="$PROJECT_DIR$/track-detail.html" />
       </list>
     </option>
   </component>
@@ -175,8 +169,28 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="834" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="159" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="835" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f773f365-51df-4770-91ec-5803bfcf30fe" name="Default" comment="" />
@@ -190,11 +204,11 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -228,6 +242,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -249,12 +271,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding>
-            <element signature="e#50401#52102#2" expanded="true" />
-            <element signature="e#52108#53809#2" expanded="true" />
-            <element signature="e#54010#54907#1" expanded="true" />
-            <element signature="e#55071#55968#1" expanded="true" />
-            <element signature="e#76651#77252#2" expanded="true" />
-            <element signature="e#77258#77859#2" expanded="true" />
+            <element signature="e#50401#52102#2" expanded="false" />
+            <element signature="e#52108#53809#2" expanded="false" />
+            <element signature="e#54010#54907#1" expanded="false" />
+            <element signature="e#55071#55968#1" expanded="false" />
+            <element signature="e#76651#77252#2" expanded="false" />
+            <element signature="e#77258#77859#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -279,12 +301,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
           <folding>
-            <element signature="e#50401#52102#2" expanded="true" />
-            <element signature="e#52108#53809#2" expanded="true" />
-            <element signature="e#54010#54907#1" expanded="true" />
-            <element signature="e#55071#55968#1" expanded="true" />
-            <element signature="e#76651#77252#2" expanded="true" />
-            <element signature="e#77258#77859#2" expanded="true" />
+            <element signature="e#50401#52102#2" expanded="false" />
+            <element signature="e#52108#53809#2" expanded="false" />
+            <element signature="e#54010#54907#1" expanded="false" />
+            <element signature="e#55071#55968#1" expanded="false" />
+            <element signature="e#76651#77252#2" expanded="false" />
+            <element signature="e#77258#77859#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -297,10 +319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/genres.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="163" column="59" selection-start-line="163" selection-start-column="59" selection-end-line="163" selection-end-column="59" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="222" column="75" selection-start-line="220" selection-start-column="68" selection-end-line="222" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -308,15 +330,23 @@
     <entry file="file://$PROJECT_DIR$/css/app.v1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+          <caret line="246" column="21" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/genres.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1218638">
-          <caret line="205" column="107" selection-start-line="205" selection-start-column="107" selection-end-line="205" selection-end-column="107" />
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="168" column="59" selection-start-line="168" selection-start-column="59" selection-end-line="168" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265233">
+          <caret line="198" column="157" selection-start-line="198" selection-start-column="157" selection-end-line="198" selection-end-column="157" />
           <folding />
         </state>
       </provider>
