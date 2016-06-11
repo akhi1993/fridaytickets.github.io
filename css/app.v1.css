@@ -195,6 +195,7 @@ a.bg-info:hover{background-color:#afd9ee;}.bg-warning{background-color:#fcf8e3;}
 .right_border {
     border-right: 1px solid #e7e7e7;
 }
+
 .text-ellipsis{
     display:block;
     white-space:nowrap;
