@@ -47,8 +47,18 @@
       <file leaf-file-name="movie_single.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movie_single.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9390681">
-              <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.9086022">
+              <caret line="349" column="38" selection-start-line="349" selection-start-column="38" selection-end-line="349" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="components.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="81.03846">
+              <caret line="2" column="17886" selection-start-line="2" selection-start-column="17173" selection-end-line="2" selection-end-column="17886" />
               <folding />
             </state>
           </provider>
@@ -419,10 +429,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="81.03846">
+          <caret line="2" column="17886" selection-start-line="2" selection-start-column="17173" selection-end-line="2" selection-end-column="17886" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/movie_single.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9390681">
-          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.9086022">
+          <caret line="349" column="38" selection-start-line="349" selection-start-column="38" selection-end-line="349" selection-end-column="38" />
           <folding />
         </state>
       </provider>
