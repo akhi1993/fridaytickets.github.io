@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Celluloid | Latest Movie Application</title>
+        <meta name="description" content=" " />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
+        <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
+        <link rel="stylesheet" href="css/hover.css" type="text/css" />
+
+        <!--[if lt IE 9]>
+        <script src="js/ie/html5shiv.js"></script>
+        <script src="js/ie/respond.min.js"></script>
+        <script src="js/ie/excanvas.js"></script>
+        <![endif]-->
+
+        <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body class="">
+        <section class="vbox bg_dull">
+            <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
+                <div class="navbar-header aside bg-info nav-xs">
+                    <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                        <i class="icon-list"></i>
+                    </a>
+                    <a href="index.html" class="navbar-brand text-lt">
+                        <i class="icon-earphones"></i>
+                        <img src="images/logo.png" alt="." class="hide">
+                        <span class="hidden-nav-xs m-l-sm">Celluloid</span>
+                    </a>
+                    <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav hidden-xs">
+                    <li>
+                        <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-white">
+                            <i class="fa fa-bars text"></i>
+                            <i class="fa fa-times text-active"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-sm-6 hidden-xs m-t-xs">
+                    <form role="search" class="m-t-sm">
+                        <div class="input-group add-on">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default bg_none" type="submit"><i class="icon-magnifier text-white"></i></button>
+                            </div>
+                            <input class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="navbar-right ">
+                    <ul class="nav navbar-nav m-n hidden-xs nav-user user">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
+                                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                                    <img src="images/a0.png" alt="...">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight">
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Suggestions/Bugs</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Help</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <section>
+                <section class="hbox stretch">
+                    <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
+                        <section class="vbox">
+                            <section class="w-f-md scrollable">
+                                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                                    <nav class="nav-primary hidden-xs">
+                                        <ul class="nav clearfix">
+                                            <li class="padder m-t m-b-sm"></li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <i class="icon-film icon text-info-dker"></i>
+                                                    <span class="font-normal">Discover</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="theatre_list.html">
+                                                    <i class="icon-screen-desktop icon text-info-dker"></i>
+                                                    <span class="font-normal">Theatres</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="listen.html">
+                                                    <i class="icon-trophy icon text-info-dker"></i>
+                                                    <span class="font-normal">Our Picks</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="listen.html">
+                                                    <i class="icon-plane icon text-info-dker"></i>
+                                                    <span class="font-normal">Upcoming</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="m-b hidden-nav-xs"></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </section>
+
+                            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                                <div class="hidden-xs ">
+                                    <div class="dropdown dropup wrapper-sm clearfix">
+                                        <a href="#" class="hvr-grow dropdown-toggle" data-toggle="dropdown">
+                                            <span class="pull-left m-l-xs">
+                                                <i class="fa fa-ellipsis-v "></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu animated fadeInRight aside text-left">
+                                            <li>
+                                                <span class="arrow bottom hidden-nav-xs"></span>
+                                                <a href="#"><i class="icon-info">&nbsp;&nbsp;</i> About Us</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="profile.html"><i class="icon-envelope">&nbsp;&nbsp;</i> Contact Us</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="#"><i class="icon-bubble">&nbsp;&nbsp;</i> Suggestions</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="docs.html"><i class="icon-user">&nbsp;&nbsp;</i> Help</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                        </section>
+                    </aside>
+                    <section id="content">
+                        <section class="vbox">
+                            <section class="scrollable">
+                                <div class="page-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="bg-picture" style="background-image:url('images/theatre/wide/ganam.jpg')">
+                                                        <span class="bg-picture-overlay"></span><!-- overlay -->
+                                                        <!-- meta -->
+                                                        <div class="container box-layout meta bottom m-l-lg">
+                                                            <div class="col-md-10 clearfix m-b-md">
+                                                                <div class="media-body">
+                                                                    <h2 class="text-white mb-2 m-t-10 ellipsis font-bold">Ganam Cinemas</h2>
+                                                                    <h5 class="text-white"> @ Valarkkavu, Thrissur</h5>
+                                                                    <span class="badge bg-info pull-left">
+                                                                        Action
+                                                                    </span>
+                                                                    <span class="badge bg-info pull-left m-l-sm">
+                                                                        Drama
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="pull-left hvr-grow m-b-md">
+                                                                    <a class="cust_btn" href="#" aria-expanded="false"> <i class="fa fa-facebook"></i> &nbsp; Facebook</a>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--/ meta -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-pills nav-pills-custom-minimal custom-minimal-bottom profile-tabs">
+                                                            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+                                                            <li role="presentation"><a href="#spec" aria-controls="spec" role="tab" data-toggle="tab">Specifications</a></li>
+                                                            <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Review</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content">
+                                                        <!-- Timeline -->
+                                                        <div role="tabpanel" class="tab-pane active" id="info">
+                                                            <div class="row">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">About</h4>
+                                                                            <p class="open_sans">
+                                                                                Kammattipadam is a 2016 Indian Malayalam-language Action, Crime film Directed by Rajeev Ravi and written by P. Balachandran. The film stars Dulquer Salman, Vinayakan, Manikandan R Achari, Vinay Forrt, Shine Tom Chacko and features model Shaun Romy in her film debut. The songs were composed by K, John P. Varkey, Vinayakan, and Vishnu Vardhan.
+                                                                                The film centers on Kammati Paadam, a slum locality in Ernakulam, Kerala. It focuses on how the Dalit community was forced to give up their lands to real-estate mafias. And how modern urbanization of Kochi metro-city took place over the plight of the Dalits
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 m-t-md">
+                                                                <div class="col-md-3">
+                                                                    <section class="panel panel-info">
+                                                                        <div class="panel-body">
+                                                                            <a href="#" class="thumb pull-right m-l m-t-xs">
+                                                                                <img src="images/projector.png" alt="...">
+                                                                            </a>
+                                                                            <div class="clear">
+                                                                                <div class="text-info">
+                                                                                    2K Silver Screen
+                                                                                </div>
+                                                                                <p class="block text-muted m-t-sm">Screen Projection</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <section class="panel panel-info">
+                                                                        <div class="panel-body">
+                                                                            <div class="thumb pull-right m-l m-t-xs">
+                                                                                <img src="images/sound-system.png" alt="...">
+                                                                            </div>
+                                                                            <div class="clear">
+                                                                                <div class="text-info">
+                                                                                    7.1 Qube Surround
+                                                                                </div>
+                                                                                <p class="block text-muted m-t-sm">Sound System</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <section class="panel panel-info">
+                                                                        <div class="panel-body">
+                                                                            <div class="thumb pull-right m-l m-t-xs">
+                                                                                <img src="images/racing-motorbike.png" alt="...">
+                                                                            </div>
+                                                                            <div class="clear">
+                                                                                <div class="text-info">
+                                                                                    Bike Parking Available
+                                                                                </div>
+                                                                                <p class="block text-muted m-t-sm">Parking</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <section class="panel panel-info">
+                                                                        <div class="panel-body">
+                                                                            <div class="thumb pull-right m-l m-t-xs">
+                                                                                <img src="images/minivan.png" alt="...">
+                                                                            </div>
+                                                                            <div class="clear">
+                                                                                <div class="text-info">
+                                                                                    Car Parking Available
+                                                                                </div>
+                                                                                <p class="block text-muted m-t-sm">Parking</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row m-b-md">
+                                                            <div class="col-md-12 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-4 bg-white wrapper">
+                                                                        <h5 class="font-bold">Categories</h5>
+                                                                        <ul class="list-group m-t-sm">
+                                                                            <li class="list-group-item">
+                                                                                <span class="badge pull-right bg-info">12:00 PM</span> Show 1
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <span class="badge pull-right bg-info">03:15 PM</span> Show 2
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <span class="badge pull-right bg-info">06:15 PM</span> Show 3
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <span class="badge pull-right bg-info">09:30 PM</span> Show 4
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-md-8 bg-white wrapper">
+                                                                        <h5 class="font-bold">Ticket Deatails</h5>
+                                                                        <section class="panel panel-default">
+                                                                            <table class="table table-striped m-b-none">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Graph</th>
+                                                                                        <th>Item</th>
+                                                                                        <th style="width:70px;"></th>
+                                                                                    </tr> </thead> <tbody> <tr> <td> <div class="sparkline" data-bar-color="#1bb399" data-type="bar" data-height="19"><canvas width="59" height="19" style="display: inline-block; width: 59px; height: 19px; vertical-align: top;"></canvas></div> </td> <td>App downloads</td> <td class="text-success"> <i class="fa fa-level-up"></i> 40% </td> </tr> <tr> <td> <div class="sparkline" data-bar-color="#1aabbb" data-type="bar" data-height="19"><canvas width="64" height="19" style="display: inline-block; width: 64px; height: 19px; vertical-align: top;"></canvas></div> </td> <td>Social connection</td> <td class="text-success"> <i class="fa fa-level-up"></i> 20% </td> </tr> <tr> <td> <div class="sparkline" data-bar-color="#fcc633" data-type="bar" data-height="19"><canvas width="59" height="19" style="display: inline-block; width: 59px; height: 19px; vertical-align: top;"></canvas></div> </td> <td>Revenue</td> <td class="text-warning"> <i class="fa fa-level-down"></i> 5% </td> </tr> <tr> <td> <div class="sparkline" data-bar-color="#e33244" data-type="bar" data-height="19"><canvas width="59" height="19" style="display: inline-block; width: 59px; height: 19px; vertical-align: top;"></canvas></div> </td> <td>Customer increase</td> <td class="text-danger"> <i class="fa fa-level-down"></i> 20% </td> </tr> </tbody> </table> </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div role="tabpanel" class="tab-pane" id="spec">
+                                                            <div class="row m-b-md">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Theater List</h4>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div role="tabpanel" class="tab-pane" id="review">
+                                                            <div class="row m-b-md">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Review</h4>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+
+                        <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <script src="js/app.v1.js"></script>
+        <script src="js/app.plugin.js"></script>
+
+    </body>
+</html>

@@ -15,16 +15,13 @@
         <script src="js/ie/excanvas.js"></script>
         <![endif]-->
 
-        <!-- Material Design -->
-        <link rel="stylesheet" href="css/material.min.css">
-        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-        <!--end Material Design styles -->
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 
     </head>
     <body class="">
-        <section class="vbox">
-            <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
+        <section class="vbox bg_dull">
+            <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
                 <div class="navbar-header aside bg-info nav-xs">
                     <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
                         <i class="icon-list"></i>
@@ -32,7 +29,7 @@
                     <a href="index.html" class="navbar-brand text-lt">
                         <i class="icon-earphones"></i>
                         <img src="images/logo.png" alt="." class="hide">
-                        <span class="hidden-nav-xs m-l-sm">Kodiyettam</span>
+                        <span class="hidden-nav-xs m-l-sm">Celluloid</span>
                     </a>
                     <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
                         <i class="fa fa-bars"></i>
@@ -40,60 +37,40 @@
                 </div>
                 <ul class="nav navbar-nav hidden-xs">
                     <li>
-                        <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-muted">
+                        <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-white">
                             <i class="fa fa-bars text"></i>
                             <i class="fa fa-times text-active"></i>
                         </a>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-left input-md m-t m-l-n-xs hidden-xs" role="search">
-                    <div class="form-group">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-                                <i class="fa fa-search"></i>
-                            </label>
-                            <div class="mdl-textfield__expandable-holder">
-                                <input class="mdl-textfield__input" type="text" id="sample6">
-                                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                <div class="col-sm-6 hidden-xs m-t-xs">
+                    <form role="search" class="m-t-sm">
+                        <div class="input-group add-on">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default bg_none" type="submit"><i class="icon-magnifier text-white"></i></button>
                             </div>
+                            <input class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+
                 <div class="navbar-right ">
                     <ul class="nav navbar-nav m-n hidden-xs nav-user user">
-                        <li class="hidden-xs">
-                            <a href="#" class="dropdown-toggle lt" data-toggle="dropdown">
-                                <i class="icon-bell"></i>
-                                <span class="badge badge-sm up bg-danger count">2</span>
-                            </a>
-                            <section class="dropdown-menu aside-xl animated fadeInUp">
-                                <section class="panel bg-white">
-                                    <div class="panel-heading b-light bg-light">
-                                        <strong>You have <span class="count">2</span> notifications</strong>
-                                    </div>
-                                    <div class="list-group list-group-alt">
-                                        <a href="#" class="media list-group-item">
-                                            <span class="pull-left thumb-sm">
-                                                <img src="images/a0.png" alt="" class="img-circle">
-                                            </span>
-                                            <span class="media-body block m-b-none"> Use awesome animate.css<br>
-                                                <small class="text-muted">10 minutes ago</small>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </section>
-                            </section>
-                        </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
                                 <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
                                     <img src="images/a0.png" alt="...">
-                                    <i class="on b-white"></i>
                                 </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight">
                                 <li>
-                                    <a href="profile.html">Help</a>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Suggestions/Bugs</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Help</a>
                                 </li>
 
                                 <li class="divider"></li>
@@ -118,25 +95,25 @@
                                             <li>
                                                 <a href="index.html">
                                                     <i class="icon-film icon text-info-dker"></i>
-                                                    <span class="font-bold">Discover</span>
+                                                    <span class="font-normal">Discover</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="genres.html">
+                                                <a href="theatre_list.html">
                                                     <i class="icon-screen-desktop icon text-info-dker"></i>
-                                                    <span class="font-bold">Theatres</span>
+                                                    <span class="font-normal">Theatres</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="listen.html">
                                                     <i class="icon-trophy icon text-info-dker"></i>
-                                                    <span class="font-bold">Our Picks</span>
+                                                    <span class="font-normal">Our Picks</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="listen.html">
                                                     <i class="icon-plane icon text-info-dker"></i>
-                                                    <span class="font-bold">Upcoming</span>
+                                                    <span class="font-normal">Upcoming</span>
                                                 </a>
                                             </li>
 
@@ -178,174 +155,454 @@
                             </footer>
                         </section>
                     </aside>
-
                     <section id="content">
                         <section class="vbox">
                             <section class="scrollable">
-                                <div id="masonry" class="pos-rlt animated fadeInUpBig">
-                                    <div class="item">
-                                        <div class="bottom wrapper bg_brand gd">
-                                            <div class="m-l-sm">
-                                                <div class="m-t m-b">
-                                                    <div class=" h3 text-lt font-bold">Kammattipadam</div>
-                                                </div>
-                                                <div class="row left_wrapper hidden-xs">
-                                                    <span class="badge bg-info pull-left">
-                                                    Action
-                                                    </span>
-                                                    <span class="badge bg-info pull-left m-l-sm">
-                                                        Drama
-                                                    </span>
-                                                </div>
-                                                <p class="m-t-sm">Dulquer Salman, Vinayakan, Shine Tom Chacko, Vinay Fort</p>
-                                            </div>
-                                        </div>
-                                        <img src="images/movies/wide/kammattipadam.jpg" alt="" class="img-full">
-                                    </div>
-                                </div>
-
-                                <div class="container">
+                                <div class="page-content">
                                     <div class="row">
-                                        <div class="col-xs-3 left_wrapper">
+                                        <div class="col-md-12">
                                             <div class="row">
-                                                <div class="col-xs-11 right_border">
-                                                    <h4 class="font-bold text-dark">3.4</h4>
-                                                    <div class="text-info hidden-xs">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                        <i class="fa fa-star-o text-muted"></i>
-                                                    </div>
-                                                    <p>Rotten Tomato</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-3 left_wrapper">
-                                            <div class="row">
-                                                <div class="col-xs-11 right_border">
-                                                    <h4 class="font-bold text-dark">3.4</h4>
-                                                    <div class="text-info hidden-xs">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                        <i class="fa fa-star-o text-muted"></i>
-                                                    </div>
-                                                    <p>IMDB</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-3 left_wrapper">
-                                            <div class="row">
-                                                <div class="col-xs-11 right_border">
-                                                    <h4 class="font-bold text-dark">3.4</h4>
-                                                    <div class="text-info hidden-xs">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                        <i class="fa fa-star-o text-muted"></i>
-                                                    </div>
-                                                    <p>Critics Rating</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-3 left_wrapper">
-                                            <div class="row">
-                                                <h4 class="font-bold text-dark">3.4</h4>
-                                                <div class="text-info hidden-xs">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o text-muted"></i>
-                                                </div>
-                                                <p>Users Rating</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="wrapper-lg">
-                                        <div class="row">
-                                            <div class="col-xs-12 bg-white">
-                                                <div class="wrapper">
-                                                    <p class="font-bold text-dark">
-                                                        About
-                                                    </p>
-                                                    <p>
-                                                        Kammattipadam is a 2016 Indian Malayalam-language Action, Crime film Directed by Rajeev Ravi and written by P. Balachandran. The film stars Dulquer Salman, Vinayakan, Manikandan R Achari, Vinay Forrt, Shine Tom Chacko and features model Shaun Romy in her film debut. The songs were composed by K, John P. Varkey, Vinayakan, and Vishnu Vardhan.
-                                                    </p>
-                                                </div>
-
-                                                <div class="wrapper">
-                                                    <p class="font-bold text-dark">
-                                                        Synopsis
-                                                    </p>
-                                                    <p>
-                                                        The film centers on Kammati Paadam, a slum locality in Ernakulam, Kerala. It focuses on how the Dalit community was forced to give up their lands to real-estate mafias. And how modern urbanization of Kochi metro-city took place over the plight of the Dalits
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="wrapper-lg">
-                                        <div class="row">
-                                            <div class="col-xs-12 bg-white">
-                                                <section class="panel panel-default">
-                                                    <header class="panel-heading bg-light">
-                                                        <ul class="nav nav-tabs pull-right">
-                                                            <li class="active">
-                                                                <a href="#messages-1" data-toggle="tab">
-                                                                    <i class="fa fa-comments text-muted"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#profile-1" data-toggle="tab">
-                                                                    <i class="fa fa-user text-muted"></i> Profile
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#settings-1" data-toggle="tab">
-                                                                    <i class="fa fa-cog text-muted"></i> Settings
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <span class="hidden-sm">Right</span>
-                                                    </header>
-                                                    <div class="panel-body">
-                                                        <div class="tab-content">
-                                                            <div class="tab-pane active" id="messages-1">message</div>
-                                                            <div class="tab-pane" id="profile-1">
-
+                                                <div class="col-md-12">
+                                                    <div class="bg-picture" style="background-image:url('images/movies/wide/kammattipadam.jpg')">
+                                                        <span class="bg-picture-overlay"></span><!-- overlay -->
+                                                        <!-- meta -->
+                                                        <div class="container box-layout meta bottom m-l-lg">
+                                                            <div class="col-md-10 clearfix m-b-md">
+                                                                <div class="media-body">
+                                                                    <h2 class="text-white mb-2 m-t-10 ellipsis font-bold">Kammattipadam</h2>
+                                                                    <h5 class="text-white"> @ Rajeev Ravi</h5>
+                                                                    <span class="badge bg-info pull-left">
+                                                                        Action
+                                                                    </span>
+                                                                    <span class="badge bg-info pull-left m-l-sm">
+                                                                        Drama
+                                                                    </span>
+                                                                </div>
                                                             </div>
-                                                            <div class="tab-pane" id="settings-1">settings</div>
+                                                            <div class="col-md-2">
+                                                                <div class="pull-left hvr-grow m-b-md">
+                                                                    <a class="cust_btn" href="#" aria-expanded="false"> <i class="fa fa-facebook"></i> &nbsp; Facebook</a>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--/ meta -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-pills nav-pills-custom-minimal custom-minimal-bottom profile-tabs">
+                                                            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+                                                            <li role="presentation"><a href="#theatre" aria-controls="theatre" role="tab" data-toggle="tab">Theater List</a></li>
+                                                            <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Review</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content">
+                                                        <!-- Timeline -->
+                                                        <div role="tabpanel" class="tab-pane active" id="info">
+                                                            <div class="row">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">About</h4>
+                                                                            <p class="open_sans">
+                                                                                Kammattipadam is a 2016 Indian Malayalam-language Action, Crime film Directed by Rajeev Ravi and written by P. Balachandran. The film stars Dulquer Salman, Vinayakan, Manikandan R Achari, Vinay Forrt, Shine Tom Chacko and features model Shaun Romy in her film debut. The songs were composed by K, John P. Varkey, Vinayakan, and Vishnu Vardhan.
+                                                                                The film centers on Kammati Paadam, a slum locality in Ernakulam, Kerala. It focuses on how the Dalit community was forced to give up their lands to real-estate mafias. And how modern urbanization of Kochi metro-city took place over the plight of the Dalits
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-3 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <h4 class="font-bold text-dark">3.4</h4>
+                                                                                    <div class="text-info">
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star-half-o"></i>
+                                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                                    </div>
+                                                                                    <p>Celluloid</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <h4 class="font-bold text-dark">3.4</h4>
+                                                                                    <div class="text-info">
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star-half-o"></i>
+                                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                                    </div>
+                                                                                    <p>Rotten Tomato</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <h4 class="font-bold text-dark">3.4</h4>
+                                                                                    <div class="text-info">
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star-half-o"></i>
+                                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                                    </div>
+                                                                                    <p>IMDB</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <h4 class="font-bold text-dark">3.4</h4>
+                                                                                    <div class="text-info">
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star"></i>
+                                                                                        <i class="fa fa-star-half-o"></i>
+                                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                                    </div>
+                                                                                    <p>Critics</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Cast</h4>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/dulquer.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Dulquer Salman</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/vinayakan.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Vinayakan</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/manikandan.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Manikandan Achari</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/shaun.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Shaun Rosmy</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row m-t-lg">
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/vinay.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Vinay Fort</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/shine.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Shine Tome Chacko</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/suraj.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Suraj Venjaramoodu</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/cast/anjali.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Anjali Aneesh</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row m-b-md">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Crew</h4>
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/crew/rajeevravi.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">Rajeev Ravi</p>
+                                                                                        <p>Director</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/crew/pbalachandra.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">P Balachandran</p>
+                                                                                        <p>Writor</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 widget-body bordered-top bordered-sky m-t-sm">
+                                                                                    <div class="text-center center">
+                                                                                        <img src="images/crew/madhuneelakandan.jpg" alt="Circle Image" class="hvr-grow img-circle img-no-padding img-responsive img-thumbnail" style="display: inline">
+                                                                                        <p class="m-t-lg font-bold">P Balachandran</p>
+                                                                                        <p>Camera</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div role="tabpanel" class="tab-pane" id="theatre">
+                                                            <div class="row m-b-md">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Theater List</h4>
+                                                                            <section class="panel panel-default m-t-lg">
+                                                                                <div class="row wrapper">
+                                                                                    <div class="col-sm-5 m-b-xs">
+                                                                                        <select class="input-sm form-control input-s-sm inline v-middle">
+                                                                                            <option value="0">Thrissur</option>
+                                                                                            <option value="1">Eranakulam</option>
+                                                                                            <option value="2">Palakkad</option>
+                                                                                            <option value="3">Trivandrum</option>
+                                                                                            <option value="3">Kozhikkod</option>
+                                                                                            <option value="3">Malappuram</option>
+                                                                                        </select>
+                                                                                        <button class="btn btn-sm btn-default btn-danger">Apply</button>
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 pull-right">
+                                                                                        <div class="input-group">
+                                                                                            <input type="text" class="input-sm form-control" placeholder="Search Theatres, Places">
+                                                                                            <span class="input-group-btn">
+                                                                                                <button class="btn btn-sm btn-default btn-danger" type="button">GO</button>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="table-responsive">
+                                                                                    <table class="table table-striped b-t b-light">
+                                                                                        <thead>
+                                                                                        <tr>
+                                                                                            <th class="th-sortable col-xs-4 link_head" data-toggle="class">
+                                                                                                Theatre
+                                                                                                <span class="th-sort">
+                                                                                                    <i class="fa fa-sort-down text"></i>
+                                                                                                    <i class="fa fa-sort-up text-active"></i>
+                                                                                                    <i class="fa fa-sort"></i>
+                                                                                                </span>
+                                                                                            </th>
+                                                                                            <th class="col-xs-4 link_head">Location</th>
+                                                                                            <th class="col-xs-4 link_head">Shows</th>
+                                                                                        </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="theatre_single.html" class="link">Girija Theatre</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <a href="" class="link">Patturaikkal, Thrissur, Kerala 680020</a>
+                                                                                            </td>
+                                                                                            <td>12:00 PM, 03:00 PM, 06:00 PM, 09:00 PM</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="theatre_single.html" class="link">Girija Theatre</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <a href="" class="link">Patturaikkal, Thrissur, Kerala 680020</a>
+                                                                                            </td>
+                                                                                            <td>12:00 PM, 03:00 PM, 06:00 PM, 09:00 PM</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="theatre_single.html" class="link">Girija Theatre</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <a href="" class="link">Patturaikkal, Thrissur, Kerala 680020</a>
+                                                                                            </td>
+                                                                                            <td>12:00 PM, 03:00 PM, 06:00 PM, 09:00 PM</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="" class="link">Girija Theatre</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <a href="" class="link">Patturaikkal, Thrissur, Kerala 680020</a>
+                                                                                            </td>
+                                                                                            <td>12:00 PM, 03:00 PM, 06:00 PM, 09:00 PM</td>
+                                                                                        </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <footer class="panel-footer">
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-4 text-left pull-left">
+                                                                                            <small class="text-muted inline m-t-sm m-b-sm">Showing 20-30 of 50 items</small>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4 text-right text-center-xs pull-right">
+                                                                                            <ul class="pagination pagination-sm m-t-none m-b-none">
+                                                                                                <li>
+                                                                                                    <a href="#"><i class="fa fa-chevron-left"></i></a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#">1</a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#">2</a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#">3</a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#">
+                                                                                                        <i class="fa fa-chevron-right"></i>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </footer>
+                                                                            </section>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div role="tabpanel" class="tab-pane" id="review">
+                                                            <div class="row m-b-md">
+                                                                <div class="col-md-12 m-t-md">
+                                                                    <div class="widget bg-white wrapper">
+                                                                        <div class="widget-body bordered-top bordered-sky m-l-sm m-t-sm">
+                                                                            <h4 class="font-bold">Review</h4>
+                                                                            <div class="text-info m-t-lg m-b-sm">
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star"></i>
+                                                                                <i class="fa fa-star-half-o"></i>
+                                                                                <i class="fa fa-star-o text-muted"></i>
+                                                                            </div>
+                                                                            <p class="open_sans m-b-lg">
+                                                                                Kammattipadam is a 2016 Indian Malayalam-language Action, Crime film Directed by Rajeev Ravi and written by P. Balachandran. The film stars Dulquer Salman, Vinayakan, Manikandan R Achari, Vinay Forrt, Shine Tom Chacko and features model Shaun Romy in her film debut. The songs were composed by K, John P. Varkey, Vinayakan, and Vishnu Vardhan.
+                                                                                The film centers on Kammati Paadam, a slum locality in Ernakulam, Kerala. It focuses on how the Dalit community was forced to give up their lands to real-estate mafias. And how modern urbanization of Kochi metro-city took place over the plight of the Dalits
+                                                                            </p>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="box box-widget">
+                                                                                        <div class="box-footer box-comments" style="display: block;">
+                                                                                            <div class="box-comment">
+                                                                                                <img class="img-circle img-sm" src="images/a2.png" alt="User Image">
+                                                                                                <div class="comment-text">
+                                                                                                    <span class="username">
+                                                                                                        Maria Gonzales
+                                                                                                        <span class="text-muted pull-right">8:03 PM, Today</span>
+                                                                                                    </span>
+                                                                                                    <div class="open_sans">
+                                                                                                        It is a long established fact that a reader will be distracted
+                                                                                                        by the readable content of a page when looking at its layout.
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="box-comment">
+                                                                                                <img class="img-circle img-sm" src="images/a1.png" alt="User Image">
+                                                                                                <div class="comment-text">
+                                                                                                    <span class="username">
+                                                                                                    Luna Stark
+                                                                                                    <span class="text-muted pull-right">10:11 AM, 10 June 2016</span>
+                                                                                                    </span>
+                                                                                                    <div class="open_sans">
+                                                                                                        It is a long established fact that a reader will be distracted
+                                                                                                        by the readable content of a page when looking at its layout.
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="box-footer" style="display: block;">
+                                                                                            <form action="#" method="post">
+                                                                                                <img class="img-responsive img-circle img-sm" src="images/a0.png" alt="Alt Text">
+                                                                                                <div class="img-push">
+                                                                                                    <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                                                                                                </div>
+                                                                                            </form>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </section>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -360,8 +617,6 @@
         </section>
         <script src="js/app.v1.js"></script>
         <script src="js/app.plugin.js"></script>
-        <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
-        <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-        <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+
     </body>
 </html>

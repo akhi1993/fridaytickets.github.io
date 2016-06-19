@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Celluloid | Latest Movie Application</title>
+        <meta name="description" content=" " />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
+        <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
+        <link rel="stylesheet" href="css/hover.css" type="text/css" />
+
+        <!--[if lt IE 9]>
+        <script src="js/ie/html5shiv.js"></script>
+        <script src="js/ie/respond.min.js"></script>
+        <script src="js/ie/excanvas.js"></script>
+        <![endif]-->
+
+        <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body class="">
+        <section class="vbox bg_content">
+            <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
+                <div class="navbar-header aside bg-info nav-xs">
+                    <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                        <i class="icon-list"></i>
+                    </a>
+                    <a href="index.html" class="navbar-brand text-lt">
+                        <i class="icon-earphones"></i>
+                        <img src="images/logo.png" alt="." class="hide">
+                        <span class="hidden-nav-xs m-l-sm">Celluloid</span>
+                    </a>
+                    <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav hidden-xs">
+                    <li>
+                        <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-white">
+                            <i class="fa fa-bars text"></i>
+                            <i class="fa fa-times text-active"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-sm-6 hidden-xs m-t-xs">
+                    <form role="search" class="m-t-sm">
+                        <div class="input-group add-on">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default bg_none" type="submit"><i class="icon-magnifier text-white"></i></button>
+                            </div>
+                            <input class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="navbar-right ">
+                    <ul class="nav navbar-nav m-n hidden-xs nav-user user">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
+                                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                                    <img src="images/a0.png" alt="...">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight">
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Suggestions/Bugs</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Help</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <section>
+                <section class="hbox stretch bg_content">
+                    <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
+                        <section class="vbox">
+                            <section class="w-f-md scrollable">
+                                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                                    <nav class="nav-primary hidden-xs">
+                                        <ul class="nav clearfix">
+                                            <li class="padder m-t m-b-sm"></li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <i class="icon-film icon text-info-dker"></i>
+                                                    <span class="font-normal">Discover</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="theatre_list.html">
+                                                    <i class="icon-screen-desktop icon text-info-dker"></i>
+                                                    <span class="font-normal">Theatres</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="listen.html">
+                                                    <i class="icon-trophy icon text-info-dker"></i>
+                                                    <span class="font-normal">Our Picks</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="listen.html">
+                                                    <i class="icon-plane icon text-info-dker"></i>
+                                                    <span class="font-normal">Upcoming</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="m-b hidden-nav-xs"></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </section>
+
+                            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                                <div class="hidden-xs ">
+                                    <div class="dropdown dropup wrapper-sm clearfix">
+                                        <a href="#" class="hvr-grow dropdown-toggle" data-toggle="dropdown">
+                                            <span class="pull-left m-l-xs">
+                                                <i class="fa fa-ellipsis-v "></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu animated fadeInRight aside text-left">
+                                            <li>
+                                                <span class="arrow bottom hidden-nav-xs"></span>
+                                                <a href="#"><i class="icon-info">&nbsp;&nbsp;</i> About Us</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="profile.html"><i class="icon-envelope">&nbsp;&nbsp;</i> Contact Us</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="#"><i class="icon-bubble">&nbsp;&nbsp;</i> Suggestions</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="docs.html"><i class="icon-user">&nbsp;&nbsp;</i> Help</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                        </section>
+                    </aside>
+
+                    <section id="content">
+                        <section class="vbox">
+                            <section id="bjax-target">
+                                <section class="hbox stretch">
+                                    <aside class="aside bg-light dk" id="sidebar">
+                                        <section class="vbox animated fadeInUp">
+                                            <section class="scrollable hover">
+                                                <div class="list-group no-radius no-border no-bg m-t-n-xxs m-b-none auto">
+                                                    <a href="theatre_list.html" class="list-group-item"> All </a>
+                                                    <a href="theatre_list.html" class="list-group-item active"> Thrissur </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Kanjani </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Chalakkudi </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Guruvayoor </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Kundamkulam </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Vadakkanchery </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Vadakkanchery </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Eranakulam </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Palghattu </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Kottayam </a>
+                                                    <a href="theatre_list.html" class="list-group-item"> Thrivandrum</a>
+                                                </div>
+                                            </section>
+                                        </section>
+                                    </aside>
+                                    <section>
+                                        <section class="vbox">
+                                            <section class="scrollable padder-lg">
+                                                <h4 class="h4_font font-thin m-b">Explore</h4>
+                                                <div class="row row-sm">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                                        <div class="item">
+                                                            <div class="pos-rlt hvr-grow">
+                                                                <div class="top">
+                                                                    <span class="badge bg-info pull-left m-l-sm m-t-sm">
+                                                                        <i class="fa fa-film">&nbsp;</i> School Bus
+                                                                    </span>
+                                                                </div>
+                                                                <div class="item-overlay opacity r r-2x bg-black">
+                                                                    <div class="text-info padder m-t-sm text-sm">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star-half-o"></i>
+                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                    </div>
+                                                                    <div class="center text-center m-t-n">
+                                                                        <a href="#">
+                                                                            <i class="icon-eye i-2x"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="bottom padder m-b-sm">
+                                                                        <a class="pull-left">
+                                                                            <i class="icon-bubbles">&nbsp; 23</i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="theatre_single.html">
+                                                                    <img src="images/theatre/thumb/ganam.jpg" alt="" class="r r-2x img-full">
+                                                                </a>
+                                                            </div>
+                                                            <div class="padder-v">
+                                                                <a href="theatre_single.html" data-bjax data-target="#bjax-target" data-el="#bjax-el" data-replace="true" class="text-ellipsis font-normal text-white">Ganam Cinemas</a>
+                                                                <p>Valarkkavu</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                                        <div class="item">
+                                                            <div class="pos-rlt hvr-grow">
+                                                                <div class="top">
+                                                                    <span class="badge bg-info pull-left m-l-sm m-t-sm">
+                                                                        <i class="fa fa-film">&nbsp;</i> Kammattipadam
+                                                                    </span>
+                                                                </div>
+                                                                <div class="item-overlay opacity r r-2x bg-black">
+                                                                    <div class="text-info padder m-t-sm text-sm">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star-half-o"></i>
+                                                                        <i class="fa fa-star-o text-muted"></i>
+                                                                    </div>
+                                                                    <div class="center text-center m-t-n">
+                                                                        <a href="#">
+                                                                            <i class="icon-eye i-2x"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="bottom padder m-b-sm">
+                                                                        <a class="pull-right">
+                                                                            <i class="icon-heart">&nbsp; 35</i>
+                                                                        </a>
+                                                                        <a class="pull-left">
+                                                                            <i class="icon-bubbles">&nbsp; 23</i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="theatre_single.html">
+                                                                    <img src="images/theatre/thumb/girija.jpg" alt="" class="r r-2x img-full">
+                                                                </a>
+                                                            </div>
+                                                            <div class="padder-v">
+                                                                <a href="theatre_single.html" data-bjax data-target="#bjax-target" data-el="#bjax-el" data-replace="true" class="text-ellipsis font-normal text-white">Girija Theatre</a>
+                                                                <p>Paatturaykkal</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <script src="js/app.v1.js"></script>
+        <script src="js/app.plugin.js"></script>
+        <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+    </body>
+</html>
