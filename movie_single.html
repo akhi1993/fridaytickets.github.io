@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="app">
+<html lang="en" class="app" ng-app="eventsApp">
     <head>
         <meta charset="utf-8" />
-        <title>Celluloid | Latest Movie Application</title>
+        <title>Friday Tickets | Latest Theatre - Movie Database</title>
         <meta name="description" content=" " />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
         <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
         <link rel="stylesheet" href="css/hover.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
         <!--[if lt IE 9]>
-        <script src="js/ie/html5shiv.js"></script>
-        <script src="js/ie/respond.min.js"></script>
-        <script src="js/ie/excanvas.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
         <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
@@ -20,16 +19,14 @@
 
     </head>
     <body class="">
-        <section class="vbox bg_dull">
+        <section class="vbox" ng-controller="EventController">
             <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
                 <div class="navbar-header aside bg-info nav-xs">
                     <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
                         <i class="icon-list"></i>
                     </a>
                     <a href="index.html" class="navbar-brand text-lt">
-                        <i class="icon-earphones"></i>
-                        <img src="images/logo.png" alt="." class="hide">
-                        <span class="hidden-nav-xs m-l-sm">Celluloid</span>
+                        <img src="images/logo.png" alt=".">
                     </a>
                     <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
                         <i class="fa fa-bars"></i>
@@ -49,7 +46,7 @@
                             <div class="input-group-btn">
                                 <button class="btn btn-default bg_none" type="submit"><i class="icon-magnifier text-white"></i></button>
                             </div>
-                            <input class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
+                            <input ng-model="query" class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
                         </div>
                     </form>
                 </div>
@@ -58,33 +55,27 @@
                     <ul class="nav navbar-nav m-n hidden-xs nav-user user">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
-                                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
-                                    <img src="images/a0.png" alt="...">
-                                </span>
+                                <i class="fa fa-ellipsis-v text-white"></i>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight">
                                 <li>
-                                    <a href="#" data-toggle="ajaxModal" >Suggestions/Bugs</a>
+                                    <a href="#" >Suggestions/Bugs</a>
                                 </li>
 
                                 <li class="divider"></li>
 
                                 <li>
-                                    <a href="#" data-toggle="ajaxModal" >Help</a>
+                                    <a href="" data-toggle="ajaxModal" >Add Reviews</a>
                                 </li>
 
-                                <li class="divider"></li>
-
-                                <li>
-                                    <a href="#" data-toggle="ajaxModal" >Logout</a>
-                                </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </header>
+
             <section>
-                <section class="hbox stretch">
+                <section class="hbox stretch bg_content">
                     <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
                         <section class="vbox">
                             <section class="w-f-md scrollable">
@@ -127,26 +118,17 @@
                                 <div class="hidden-xs ">
                                     <div class="dropdown dropup wrapper-sm clearfix">
                                         <a href="#" class="hvr-grow dropdown-toggle" data-toggle="dropdown">
-                                            <span class="pull-left m-l-xs">
-                                                <i class="fa fa-ellipsis-v "></i>
-                                            </span>
+                                                    <span class="pull-left m-l-xs">
+                                                        <i class="fa fa-ellipsis-v "></i>
+                                                    </span>
                                         </a>
                                         <ul class="dropdown-menu animated fadeInRight aside text-left">
-                                            <li>
-                                                <span class="arrow bottom hidden-nav-xs"></span>
-                                                <a href="#"><i class="icon-info">&nbsp;&nbsp;</i> About Us</a>
-                                            </li>
-                                            <li class="divider"></li>
                                             <li>
                                                 <a href="#"><i class="icon-envelope">&nbsp;&nbsp;</i> Contact Us</a>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
                                                 <a href="#"><i class="icon-bubble">&nbsp;&nbsp;</i> Suggestions</a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#"><i class="icon-user">&nbsp;&nbsp;</i> Help</a>
                                             </li>
 
                                         </ul>
