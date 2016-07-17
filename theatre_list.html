@@ -5,14 +5,13 @@
         <title>Celluloid | Latest Movie Application</title>
         <meta name="description" content=" " />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
         <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
         <link rel="stylesheet" href="css/hover.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
         <!--[if lt IE 9]>
-        <script src="js/ie/html5shiv.js"></script>
-        <script src="js/ie/respond.min.js"></script>
-        <script src="js/ie/excanvas.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
         <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
@@ -20,15 +19,14 @@
 
     </head>
     <body class="">
-        <section class="vbox bg_content" ng-controller="EventController">
+        <section class="vbox" ng-controller="EventController">
             <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
                 <div class="navbar-header aside bg-info nav-xs">
                     <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
                         <i class="icon-list"></i>
                     </a>
                     <a href="index.html" class="navbar-brand text-lt">
-                        <i class="icon-earphones"></i>
-                        <img src="images/logo.png" alt="." class="hide">
+                        <img src="images/logo.png" alt=".">
                         <span class="hidden-nav-xs m-l-sm">Celluloid</span>
                     </a>
                     <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
@@ -58,31 +56,25 @@
                     <ul class="nav navbar-nav m-n hidden-xs nav-user user">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
-                                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
-                                    <img src="images/a0.png" alt="...">
-                                </span>
+                                <i class="fa fa-ellipsis-v text-white"></i>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight">
                                 <li>
-                                    <a href="#" data-toggle="ajaxModal" >Suggestions/Bugs</a>
+                                    <a href="#" >Suggestions/Bugs</a>
                                 </li>
 
                                 <li class="divider"></li>
 
                                 <li>
-                                    <a href="#" data-toggle="ajaxModal" >Help</a>
+                                    <a href="" data-toggle="ajaxModal" >Add Reviews</a>
                                 </li>
 
-                                <li class="divider"></li>
-
-                                <li>
-                                    <a href="signin.html" >Logout</a>
-                                </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </header>
+
             <section>
                 <section class="hbox stretch bg_content">
                     <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
@@ -127,26 +119,17 @@
                                 <div class="hidden-xs ">
                                     <div class="dropdown dropup wrapper-sm clearfix">
                                         <a href="#" class="hvr-grow dropdown-toggle" data-toggle="dropdown">
-                                            <span class="pull-left m-l-xs">
-                                                <i class="fa fa-ellipsis-v "></i>
-                                            </span>
+                                                <span class="pull-left m-l-xs">
+                                                    <i class="fa fa-ellipsis-v "></i>
+                                                </span>
                                         </a>
                                         <ul class="dropdown-menu animated fadeInRight aside text-left">
-                                            <li>
-                                                <span class="arrow bottom hidden-nav-xs"></span>
-                                                <a href="#"><i class="icon-info">&nbsp;&nbsp;</i> About Us</a>
-                                            </li>
-                                            <li class="divider"></li>
                                             <li>
                                                 <a href="#"><i class="icon-envelope">&nbsp;&nbsp;</i> Contact Us</a>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
                                                 <a href="#"><i class="icon-bubble">&nbsp;&nbsp;</i> Suggestions</a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#"><i class="icon-user">&nbsp;&nbsp;</i> Help</a>
                                             </li>
 
                                         </ul>
@@ -165,58 +148,49 @@
                                             <i class="icon-reload i-lg inline" id="refresh"></i>
                                         </a>
                                         <h3 class="h4_font font-normal m-b">Theatre List</h3> <br/>
-                                        <div class="row row-sm">
+                                        <div class="row row-sm m-b-md">
                                             <div ng-repeat="item in theater.session | filter :query">
-
-                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                                                <div class="item">
-                                                    <div class="pos-rlt hvr-grow">
-                                                        <div class="top">
-                                                            <span class="badge bg-info pull-left m-l-sm m-t-sm">
-                                                                <i class="fa fa-film">&nbsp;</i> School Bus
-                                                            </span>
+                                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                                    <div class="item">
+                                                        <div class="pos-rlt hvr-grow">
+                                                            <div class="top">
+                                                                <span class="badge bg-info pull-left m-l-sm m-t-sm">
+                                                                    <i class="fa fa-film">&nbsp;</i> {{item.showing}}
+                                                                </span>
+                                                            </div>
+                                                            <div class="item-overlay opacity r r-2x bg-black">
+                                                                <div class="text-info padder m-t-sm text-sm">
+                                                                    <span class="badge bg-info">
+                                                                        <i class="fa fa-star">&nbsp; &nbsp;</i>{{item.rating}}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="center text-center m-t-n">
+                                                                    <a href="theatre_single.html">
+                                                                        <i class="icon-eye i-2x"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <a href="theatre_single.html">
+                                                                <img ng-src="{{item.image}}" alt="" class="r r-2x img-full">
+                                                            </a>
                                                         </div>
-                                                        <div class="item-overlay opacity r r-2x bg-black">
-                                                            <div class="text-info padder m-t-sm text-sm">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <i class="fa fa-star-o text-muted"></i>
-                                                            </div>
-                                                            <div class="center text-center m-t-n">
-                                                                <a href="theatre_single.html">
-                                                                    <i class="icon-eye i-2x"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="bottom padder m-b-sm">
-                                                                <a class="pull-left">
-                                                                    <i class="icon-bubbles">&nbsp; 23</i>
-                                                                </a>
-                                                            </div>
+                                                        <div class="padder-v">
+                                                            <a href="theatre_single.html" class="text-ellipsis font-normal text-white title_link">{{item.name}}</a>
+                                                            <p>{{item.place}}</p>
                                                         </div>
-                                                        <a href="theatre_single.html">
-                                                            <img ng-src="{{item.image}}" alt="" class="r r-2x img-full">
-                                                        </a>
-                                                    </div>
-                                                    <div class="padder-v">
-                                                        <a href="theatre_single.html" class="text-ellipsis font-normal text-white">{{item.name}}</a>
-                                                        <p>{{item.place}}</p>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            </div>
-                                            </div>
-                                        </section>
+                                        </div>
                                     </section>
                                 </section>
                             </section>
                         </section>
-                        <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
                     </section>
+                    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
                 </section>
             </section>
+        </section>
         <script src="js/angular/angular.js"></script>
         <script src="js/angular/angular-route.min.js"></script>
         <script src="js/angular/angular-resource.min.js"></script>
@@ -224,6 +198,5 @@
         <script src="js/controller/EventController.js"></script>
         <script src="js/app.v1.js"></script>
         <script src="js/app.plugin.js"></script>
-        <script type="text/javascript" src="js/jPlayer/demo.js"></script>
     </body>
 </html>

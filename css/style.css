@@ -1,0 +1,13 @@
+.title_link{
+    color: #ffffff !important;
+    font-family: 'Reem Kufi', sans-serif !important;
+    font-weight: lighter;
+}
+.title_link:hover {
+    color: #ee3748 !important;
+}
+
+.bg-info{
+    background-color:#ee3748 !important;
+    color:#eaf6f9;
+}
