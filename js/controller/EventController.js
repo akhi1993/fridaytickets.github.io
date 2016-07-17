@@ -124,17 +124,6 @@
                   },
               ]
           }
-          $scope.theatersingle = {
-              session: [
-                  {
-                      name: 'Ganam Cinemas',
-                      rating: '3 / 5',
-                      showing: 'Shajahanum Pareekuttiyum',
-                      place: 'Valarkkavu, Thrissur',
-                      image: 'images/theatre/thumb/ganam.jpg'
-                  },
-              ]
-          }
 
       }
 
