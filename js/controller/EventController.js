@@ -9,6 +9,15 @@
           $scope.movie = {
                 session : [
                     {
+                        name : 'Kabali',
+                        genere1 : 'Action',
+                        genere2 : 'Crime',
+                        category : 'U',
+                        language : 'Tamil',
+                        rating : '3 / 5',
+                        image : 'images/movies/thumb/kabali.jpg'
+                    },
+                    {
                         name : 'Kasaba',
                         genere1 : 'Action',
                         genere2 : 'Comedy',
@@ -61,6 +70,51 @@
                         language : 'English',
                         rating : '2.5 / 5',
                         image : 'images/movies/thumb/ice-age-collision-course.jpg'
+                    },
+                    {
+                        name : 'Appa',
+                        genere1 : 'Drama',
+                        genere2 : 'Family',
+                        category : 'U',
+                        language : 'Tamil',
+                        rating : '3.5 / 5',
+                        image : 'images/movies/thumb/appa.jpg'
+                    },
+                    {
+                        name : 'Oru Melliya Kodu',
+                        genere1 : 'Mystery',
+                        genere2 : 'Drama',
+                        category : 'U',
+                        language : 'Tamil',
+                        rating : '2 / 5',
+                        image : 'images/movies/thumb/oru-melliya-kodu.jpg'
+                    },
+                    {
+                        name : 'Happy Wedding',
+                        genere1 : 'Drama',
+                        genere2 : 'Comedy',
+                        category : 'U',
+                        language : 'Malayalam',
+                        rating : '3 / 5',
+                        image : 'images/movies/thumb/happy-wedding.jpg'
+                    },
+                    {
+                        name : 'School Bus',
+                        genere1 : 'Drama',
+                        genere2 : 'Family',
+                        category : 'U',
+                        language : 'Malayalam',
+                        rating : '3 / 5',
+                        image : 'images/movies/thumb/schoolbus.jpg'
+                    },
+                    {
+                        name : 'Jacobinte Swargarajyam',
+                        genere1 : 'Drama',
+                        genere2 : 'Family',
+                        category : 'U',
+                        language : 'Malayalam',
+                        rating : '3 / 5',
+                        image : 'images/movies/thumb/jacobinte-swargarajyam.jpg'
                     },
                 ]
           }

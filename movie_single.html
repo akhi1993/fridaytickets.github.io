@@ -2,7 +2,7 @@
 <html lang="en" class="app" ng-app="eventsApp">
     <head>
         <meta charset="utf-8" />
-        <title>Friday Tickets | Latest Theatre - Movie Database</title>
+        <title>Friday Tickets (Beta) | Latest Theatre - Movie Database</title>
         <meta name="description" content=" " />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
@@ -16,7 +16,6 @@
 
         <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-
     </head>
     <body class="">
         <section class="vbox" ng-controller="EventController">
@@ -59,15 +58,14 @@
                             </a>
                             <ul class="dropdown-menu animated fadeInRight">
                                 <li>
-                                    <a href="#" >Suggestions/Bugs</a>
+                                    <a href="suggestions.html">Suggestions/Bugs</a>
                                 </li>
 
                                 <li class="divider"></li>
 
                                 <li>
-                                    <a href="" data-toggle="ajaxModal" >Add Theatre Data</a>
+                                    <a href="adddata.html">Add Theatre Data</a>
                                 </li>
-
                             </ul>
                         </li>
                     </ul>
@@ -346,17 +344,17 @@
                                                                             <section class="panel panel-default m-t-lg">
                                                                                 <div class="row wrapper">
                                                                                     <div class="col-sm-5 m-b-xs">
-                                                                                        <select class="input-sm form-control input-s-sm inline v-middle">
+                                                                                        <select class="input-sm form-control input-s-sm inline v-middle" title="">
                                                                                             <option value="0">Thrissur</option>
-                                                                                            <option value="1">Eranakulam</option>
-                                                                                            <option value="2">Palakkad</option>
-                                                                                            <option value="3">Trivandrum</option>
-                                                                                            <option value="3">Kozhikkod</option>
-                                                                                            <option value="3">Malappuram</option>
-                                                                                            <option value="3">Alappuzha</option>
-                                                                                            <option value="3">Kollam</option>
-                                                                                            <option value="3">Idukki</option>
-                                                                                            <option value="3">Pathanamthitta</option>
+                                                                                            <option value="1" disabled>Eranakulam</option>
+                                                                                            <option value="2" disabled>Palakkad</option>
+                                                                                            <option value="3" disabled>Trivandrum</option>
+                                                                                            <option value="3" disabled>Kozhikkod</option>
+                                                                                            <option value="3" disabled>Malappuram</option>
+                                                                                            <option value="3" disabled>Alappuzha</option>
+                                                                                            <option value="3" disabled>Kollam</option>
+                                                                                            <option value="3" disabled>Idukki</option>
+                                                                                            <option value="3" disabled>Pathanamthitta</option>
                                                                                         </select>
                                                                                         <button class="btn btn-sm btn-default btn-danger">Apply</button>
                                                                                     </div>

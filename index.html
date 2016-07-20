@@ -2,7 +2,7 @@
 <html lang="en" class="app" ng-app="eventsApp">
     <head>
         <meta charset="utf-8" />
-        <title>Friday Tickets | Latest Theatre - Movie Database</title>
+        <title>Friday Tickets (Beta) | Latest Theatre - Movie Database</title>
         <meta name="description" content=" " />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
@@ -59,15 +59,14 @@
                             </a>
                             <ul class="dropdown-menu animated fadeInRight">
                                 <li>
-                                    <a href="#" >Suggestions/Bugs</a>
+                                    <a href="suggestions.html">Suggestions/Bugs</a>
                                 </li>
 
                                 <li class="divider"></li>
 
                                 <li>
-                                    <a href="" data-toggle="ajaxModal" >Add Theatre Data</a>
+                                    <a href="adddata.html">Add Theatre Data</a>
                                 </li>
-
                             </ul>
                         </li>
                     </ul>
@@ -145,43 +144,41 @@
                                             </div>
                                         </a>
                                         <h3 class="h4_font font-normal m-b">Now Showing</h3> <br/>
-                                        <div class="row row-sm">
+                                        <div class="row row-sm m-b-lg">
                                             <div ng-repeat="item in movie.session | filter :query">
-                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                                <div class="item">
-                                                    <div class="hvr-grow pos-rlt">
-                                                        <div class="top v-top">
-                                                            <span class="badge bg-info m-l-sm m-t-sm">{{item.category}}</span>
-                                                        </div>
-                                                        <div class="bottom">
-                                                            <span class="badge bg-info m-l-sm m-b-sm">{{item.genere1}}</span>
-                                                            <span class="badge bg-info m-l-sm m-b-sm">{{item.genere2}}</span>
-                                                        </div>
-                                                        <div class="item-overlay opacity r r-2x bg-black">
-                                                            <div class="text-info padder m-t-sm text-sm">
-                                                                <span class="badge bg-info">
-                                                                    <i class="fa fa-star">&nbsp; &nbsp;</i>{{item.rating}}
-                                                                </span>
+                                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                                    <div class="item">
+                                                        <div class="hvr-grow pos-rlt">
+                                                            <div class="top v-top">
+                                                                <span class="badge bg-info m-l-sm m-t-sm">{{item.category}}</span>
                                                             </div>
-                                                            <div class="center text-center m-t-n">
-                                                                <a href="movie_single.html">
-                                                                    <i class="icon-eye i-2x"></i>
-                                                                </a>
+                                                            <div class="bottom">
+                                                                <span class="badge bg-info m-l-sm m-b-sm">{{item.genere1}}</span>
+                                                                <span class="badge bg-info m-l-sm m-b-sm">{{item.genere2}}</span>
                                                             </div>
+                                                            <div class="item-overlay opacity r r-2x bg-black">
+                                                                <div class="text-info padder m-t-sm text-sm">
+                                                                    <span class="badge bg-info">
+                                                                        <i class="fa fa-star">&nbsp; &nbsp;</i>{{item.rating}}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="center text-center m-t-n">
+                                                                    <a href="movie_single.html">
+                                                                        <i class="icon-eye i-2x"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <a>
+                                                                <img ng-src="{{item.image}}" alt="" class="r r-2x img-full">
+                                                            </a>
                                                         </div>
-                                                        <a>
-                                                            <img ng-src="{{item.image}}" alt="" class="r r-2x img-full">
-                                                        </a>
-                                                    </div>
-                                                    <div class="padder-v">
-                                                        <a href="movie_single.html" class="text-ellipsis font-normal text-white title_link">{{item.name}}</a>
-                                                        <p>{{item.language}}</p>
+                                                        <div class="padder-v">
+                                                            <a href="movie_single.html" class="text-ellipsis font-normal text-white title_link">{{item.name}}</a>
+                                                            <p>{{item.language}}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            </div>
-
-
                                         </div>
                                     </section>
                                 </section>
