@@ -11,3 +11,10 @@
     background-color:#ee3748 !important;
     color:#eaf6f9;
 }
+.border_cust {
+    border: 1px solid #e7e7e7;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

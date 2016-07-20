@@ -23,13 +23,13 @@
             <header class="bg_brand header header-md navbar navbar-fixed-top-xs">
                 <div class="navbar-header aside bg-info nav-xs">
                     <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
-                        <i class="icon-list"></i>
+                        <i class="fa fa-bars"></i>
                     </a>
                     <a href="index.html" class="navbar-brand text-lt">
                         <img src="images/logo.png" alt=".">
                     </a>
                     <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-ellipsis-v"></i>
                     </a>
                 </div>
                 <ul class="nav navbar-nav hidden-xs">
@@ -65,7 +65,7 @@
                                 <li class="divider"></li>
 
                                 <li>
-                                    <a href="" data-toggle="ajaxModal" >Add Reviews</a>
+                                    <a href="" data-toggle="ajaxModal" >Add Theatre Data</a>
                                 </li>
 
                             </ul>
@@ -113,28 +113,6 @@
                                     </nav>
                                 </div>
                             </section>
-
-                            <footer class="footer hidden-xs no-padder text-center-nav-xs">
-                                <div class="hidden-xs ">
-                                    <div class="dropdown dropup wrapper-sm clearfix">
-                                        <a href="#" class="hvr-grow dropdown-toggle" data-toggle="dropdown">
-                                            <span class="pull-left m-l-xs">
-                                                <i class="fa fa-ellipsis-v "></i>
-                                            </span>
-                                        </a>
-                                        <ul class="dropdown-menu animated fadeInRight aside text-left">
-                                            <li>
-                                                <a href="#"><i class="icon-envelope">&nbsp;&nbsp;</i> Contact Us</a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#"><i class="icon-bubble">&nbsp;&nbsp;</i> Suggestions</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </footer>
                         </section>
                     </aside>
 
@@ -143,8 +121,28 @@
                             <section>
                                 <section class="vbox">
                                     <section class="scrollable padder-lg" id="bjax-target">
-                                        <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" >
-                                            <i class="icon-reload i-lg inline" id="refresh"></i>
+                                        <div class="col-xs-12 visible-xs m-b-xs">
+                                            <form role="search" class="m-b-lg">
+                                                <div class="input-group add-on">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default bg_none" type="submit"><i class="icon-magnifier text-white"></i></button>
+                                                    </div>
+                                                    <input ng-model="query" class="form-control bg_none text-white m-l-n-sm cust_form-control" placeholder="Search Movies and Movie Theatres" name="srch-term" id="srch-term" type="text">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <a class="pull-right text-muted m-t-sm" data-toggle="" >
+                                            <div class="col-sm-5 m-b-xs">
+                                                <select class="input-sm form-control input-s-sm inline v-middle" title="">
+                                                    <option value="0">All Movies</option>
+                                                    <option value="1">Malayalam</option>
+                                                    <option value="2">Tamil</option>
+                                                    <option value="3">Hindi</option>
+                                                    <option value="3">English</option>
+                                                    <option value="3">Telungu</option>
+                                                    <option value="3">Kannada</option>
+                                                </select>
+                                            </div>
                                         </a>
                                         <h3 class="h4_font font-normal m-b">Now Showing</h3> <br/>
                                         <div class="row row-sm">

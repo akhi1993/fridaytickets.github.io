@@ -244,7 +244,8 @@ a.bg-info:hover{background-color:#afd9ee;}.bg-warning{background-color:#fcf8e3;}
 
 
 .box-comments {
-    background: #f7f7f7 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
 }
 .box-footer {
     border-top-left-radius: 0;
@@ -252,7 +253,6 @@ a.bg-info:hover{background-color:#afd9ee;}.bg-warning{background-color:#fcf8e3;}
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     border-top: 1px solid #f4f4f4;
-    padding: 10px;
     background-color: #fff;
 }
 .box-comments .box-comment:first-of-type {
